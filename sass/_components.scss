@@ -1,15 +1,75 @@
 /*----------------------------
-      section ???
+      layout and images
  ----------------------------*/
-  
-  
-  
-/*----------------------------
-      section ???
-----------------------------*/
-  
-  
-  
 
-  
-  
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.social-proof {
+  margin: 80px 24px 99px;
+}
+
+/*----------------------------
+      hero section 
+ ----------------------------*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  &__description {
+    text-align: center;
+  }
+
+  &__heading {
+    color: $dark-magenta;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: -1.14px;
+    max-width: 327px;
+  }
+
+  &__paragraph {
+    color: $magenta;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    max-width: 327px;
+    margin: 18px 0 40px;
+  }
+
+  &__reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__review {
+    display: flex;
+    flex-direction: column;
+    background: $light-magenta;
+    text-align: center;
+    gap: 16px;
+    padding: 16px 0 16px;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: center;
+    gap: 8.45px;
+  }
+
+  &__label {
+    color: $dark-magenta;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 14.56px;
+  }
+}
+
+/*----------------------------
+      comments section 
+----------------------------*/
