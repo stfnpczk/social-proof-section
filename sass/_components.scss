@@ -20,16 +20,19 @@ body {
   flex-direction: column;
 
   &__description {
+    margin: 0 auto;
     text-align: center;
+    max-width: 327px;
+    align-items: center;
   }
 
   &__heading {
+
     color: $dark-magenta;
     font-size: 32px;
     line-height: 32px;
     font-weight: 700;
     letter-spacing: -1.14px;
-    max-width: 327px;
   }
 
   &__paragraph {
@@ -37,7 +40,6 @@ body {
     line-height: 25px;
     font-weight: 500;
     letter-spacing: -0.5px;
-    max-width: 327px;
     margin: 18px 0 40px;
   }
 
@@ -73,3 +75,60 @@ body {
 /*----------------------------
       comments section 
 ----------------------------*/
+
+.comments {
+  margin-top: 49px;
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__testimonial {
+    background: $dark-magenta;
+    border-radius: 8px;
+    padding: 40px 32px 32px;
+    color: $white;
+    max-width: 327px;
+  }
+
+  &__headshot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 23px;
+  }
+
+  &__name {
+    font-size: 13px;
+    line-height: 14.56px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__verified {
+    color:  $soft-pink;
+    font-size: 13px;
+    line-height: 14.56px;
+
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.23px;
+    font-weight: 500;
+    margin-top: 26px;
+  }
+
+  
+
+  
+}
