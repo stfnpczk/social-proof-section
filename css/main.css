@@ -556,6 +556,12 @@ body {
   gap: 8.45px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .hero__stars {
+    margin-right: 14px;
+  }
+}
+
 .hero__label {
   color: #502050;
   font-size: 13px;
@@ -593,7 +599,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 298px;
+    height: 266px;
     gap: 30px;
   }
 }
