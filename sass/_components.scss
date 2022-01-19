@@ -3,15 +3,28 @@
  ----------------------------*/
 
 body {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
+
+  @media only screen and (min-width: 768px) {
+    background: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
 }
 
 .social-proof {
   margin: 80px 24px 99px;
+
+  @media only screen and (min-width: 1440px) {
+    margin: 127px 165px 100px;
+  }
 }
 
 /*----------------------------
@@ -22,20 +35,38 @@ body {
   display: flex;
   flex-direction: column;
 
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 235px;
+  }
+
   &__description {
     margin: 0 auto;
     text-align: center;
     max-width: 327px;
     align-items: center;
+
+    @media only screen and (min-width: 1440px) {
+      flex-basis: 445px;
+      margin: 0;
+      text-align: start;
+      max-width: 445px;
+    }
   }
 
   &__heading {
-
     color: $dark-magenta;
     font-size: 32px;
     line-height: 32px;
     font-weight: 700;
     letter-spacing: -1.14px;
+
+    @media only screen and (min-width: 1440px) {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -1.71px;
+    }
   }
 
   &__paragraph {
@@ -44,12 +75,21 @@ body {
     font-weight: 500;
     letter-spacing: -0.5px;
     margin: 18px 0 40px;
+
+    @media only screen and (min-width: 1440px) {
+      margin: 16px 0 72px;
+    }
   }
 
   &__reviews-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media only screen and (min-width: 1440px) {
+      flex-basis: 50%;
+      margin-top: 18px;
+    }
   }
 
   &__review {
@@ -57,8 +97,29 @@ body {
     flex-direction: column;
     background: $light-magenta;
     text-align: center;
+    border-radius: 8px;
     gap: 16px;
-    padding: 16px 0 16px;
+    padding: 16px 0 16px 0;
+    align-items: center;
+
+    @media only screen and (min-width: 1440px) {
+      flex-direction: row;
+      width: 100%;
+      max-width: 393px;
+      padding: 20px 0px 20px 32px;
+
+      &:first-child {
+        align-self: start;
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        align-self: end;
+      }
+    }
   }
 
   &__stars {
@@ -81,11 +142,20 @@ body {
 
 .comments {
   margin-top: 49px;
-  
+
+  @media only screen and (min-width: 1440px) {
+    margin-top: 72px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media only screen and (min-width: 1440px) {
+      flex-direction: row;
+      height: 298px;
+    }
   }
 
   &__testimonial {
@@ -94,6 +164,23 @@ body {
     padding: 40px 32px 32px;
     color: $white;
     max-width: 327px;
+
+    @media only screen and (min-width: 1440px) {
+      max-height: 234px;
+      padding: 40px 32px;
+
+      &:first-child {
+        align-self: flex-start;
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+      }
+
+      &:nth-child(3) {
+        align-self: flex-end;
+      }
+    }
   }
 
   &__headshot {
@@ -117,10 +204,9 @@ body {
   }
 
   &__verified {
-    color:  $soft-pink;
+    color: $soft-pink;
     font-size: 13px;
     line-height: 14.56px;
-
   }
 
   &__text {
@@ -129,9 +215,8 @@ body {
     letter-spacing: -0.23px;
     font-weight: 500;
     margin-top: 26px;
+    @media only screen and (min-width: 1440px) {
+      max-width: 286px;
+    }
   }
-
-  
-
-  
 }
