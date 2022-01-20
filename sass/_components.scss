@@ -22,8 +22,8 @@ body {
 .social-proof {
   margin: 5rem 1.5rem 6.1875rem;
 
-  @media only screen and (min-width: 1440px) {
-    margin: 7.9375rem 10.3125rem 6.25rem;
+  @media only screen and (min-width: 1150px) {
+    margin: 7.9375rem 0 6.25rem;
   }
 }
 
@@ -182,7 +182,7 @@ body {
     }
   }
 
-  &__headshot {
+  &__customer-info {
     display: flex;
     flex-direction: row;
     align-items: center;
