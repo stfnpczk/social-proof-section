@@ -495,8 +495,8 @@ body {
 
 @media only screen and (min-width: 1150px) {
   .hero__reviews-container {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 540px;
+        flex-basis: 540px;
     margin-top: 1.125rem;
   }
 }
@@ -527,7 +527,7 @@ body {
             flex-direction: row;
     width: 100%;
     max-width: 24.5625rem;
-    padding: 1.25rem 0rem 1.25rem 2rem;
+    padding: 1.625rem 0rem 1.625rem 2rem;
   }
   .hero__review:first-child {
     -ms-flex-item-align: start;
